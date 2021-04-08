@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia - App</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="icon/png" href="resources/logo.png">
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="china"><img src="resources/china.png"></div>
+    <main >
+        <!-- botón iniciar prueba -->
+    <div class="start_btn">
+        <h1>Bienvenido a Trivia-App <br>
+        <h2>Selecciona la cualtura de la cuál se tratara la trivia</h2>
+        <button class="japan_btn">Japón</button>
+        <button class="china_btn" >China</button>
+        <button class="korea_btn">Corea</button>
+    </div>
+
+    <!-- Cajas de información -->
+    <div class="info_box" >
+        <div class="info-title"><span>Algunas reglas de esta trivia</span></div>
+        <div class="info-list">
+            <div class="info">1. Solo tendrás <span>15 segundos</span> por cada pregunta.</div>
+            <div class="info">2. Al seleccionar su respuesta, no se podra deshacer.</div>
+            <div class="info">3. No podra selecionar respuestas al terminar el tiempo.</div>
+            <div class="info">4. No puede salir de la trivia mientras está jugando.</div>
+            <div class="info">5. En base de a sus respuestas obtendra puntos.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Salir</button>
+            <button class="restart">Continuar</button>
+        </div>
+    </div>
+    <div  class="name_box" >
+        <div class="name-title"><span>Antes de empezar porfavor ingresa tu nombre 😊</span></div>
+            <div class="name-list">
+                <form>
+                    <input type="text" required id="name" class="name" placeholder="Ejemplo: Josué Gerardo Rivera">
+                    <button type="submit" class="beginning" id="beginning">Continuar</button>
+                </form>  
+            </div>       
+        </div>
+    </div>
+    <!-- Cuadro de preguntas -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">¡Trivia - App!</div>
+            <div class="timer">
+                <div class="time_left_txt">Tiempo</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section id="que_sect">
+            <div class="que_text">
+                <!-- Aquí he insertado una pregunta de JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Aquí he insertado opciones de JavaScript -->
+            </div>
+        </section>
+
+        <!-- pie de página del Cuadro de preguntas -->
+        <footer>
+            <div class="total_que">
+                <!-- Aquí he insertado el número de recuento de preguntas de JavaScript -->
+            </div>
+            <button class="next_btn">Siguiente</button>
+        </footer>
+    </div>
+
+    <!-- Cuadro de resultados -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">¡Has completado la trivia!</div>
+        <div class="score_text">
+            <!-- Aquí he insertado el resultado de la puntuación de JavaScript -->
+        </div>
+        <hr size="5"> 
+        <div class="buttons">
+            <button class="restart">Repetir</button>
+            <button class="quit">Salir</button>
+        </div>
+    </div>
+    </main>
+    
+    <!-- Dentro de este archivo JavaScript he insertado preguntas y opciones solamente -->
+    <script src="js/preguntas.js"></script>
+
+    <!-- Dentro de este archivo JavaScript he codificado todos los códigos de prueba -->
+    <script src="js/script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+    });
+    </script>
+</body>
+</html>
