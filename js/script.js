@@ -206,7 +206,6 @@ function startTimer(time){
                 if(option_list.children[i].textContent == correcAns){ // si hay una opción que coincide con una respuesta de matriz
                     option_list.children[i].setAttribute("class", "option correct"); // agregando color verde a la opción combinada
                     option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); // agregando el ícono de marca a la opción correspondiente
-                    console.log("Time Off: Auto selected correct answer.");
                 }
             }
             for(i=0; i < allOptions; i++){
