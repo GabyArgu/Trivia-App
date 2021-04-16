@@ -594,7 +594,6 @@ hr{
     .result_box .score_text span{
         display: flex;
         margin: 10px 0;
-        font-size: 16px;
         font-weight: 500;
     }
 
