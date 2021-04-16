@@ -175,7 +175,7 @@ function showResult(){
     const scoreText = result_box.querySelector(".score_text");
     if (userScore > 3){ // si el usuario obtuvo más de 3
         // crear una nueva etiqueta de intervalo y pasar el número de puntuación del usuario y el número total de preguntas
-        let scoreTag = '<span>¡Felicidades <p>' + name.value + '</p>! 🎉, obtuviste <p>'+ userScore +'</p> puntos de <p>'+ questions[cout].length +'</p></span>';
+        let scoreTag = '<span>¡Felicidades <p>' + name.value + '</p>! 🎉obtuviste <p>'+ userScore +'</p> de <p>'+ questions[cout].length +'</p></span>';
         scoreText.innerHTML = scoreTag;  // agregando una nueva etiqueta span dentro de score_Text
     }
     else if(userScore > 1){ // si el usuario puntuó más de 1
